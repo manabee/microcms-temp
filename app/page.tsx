@@ -17,7 +17,7 @@ export default async function Page() {
         <div>
           <h1 className={styles.title}>日常に彩りを。</h1>
           <p className={styles.description}>
-          あなたの心に素敵な感動をお届けします。
+          あなたの心にキラキラな感動をお届けします。
           </p>
         </div>
         <Image
