@@ -15,9 +15,9 @@ export default async function Page() {
     <>
       <section className={styles.top}>
         <div>
-          <h1 className={styles.title}>テクノロジーの力で世界を変える</h1>
+          <h1 className={styles.title}>日常に彩りを。</h1>
           <p className={styles.description}>
-            私たちは市場をリードしているグローバルテックカンパニーです。
+          あなたの心に素敵な感動をお届けします。git reset --soft HEAD^
           </p>
         </div>
         <Image
