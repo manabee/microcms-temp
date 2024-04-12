@@ -6,6 +6,7 @@ export default function ContactForm() {
   const lastnameRef = useRef<HTMLInputElement>(null);
   const firstnameRef = useRef<HTMLInputElement>(null);
   const companyRef = useRef<HTMLInputElement>(null);
+  const mobilephoneRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   const [success, setSuccess] = useState<boolean>(false);
@@ -21,6 +22,7 @@ export default function ContactForm() {
         lastname: lastnameRef.current?.value,
         firstname: firstnameRef.current?.value,
         company: companyRef.current?.value,
+        mobilephone: mobilephoneRef.current?.value,
         email: emailRef.current?.value,
         message: messageRef.current?.value,
       }),
@@ -61,6 +63,12 @@ export default function ContactForm() {
           会社名
         </label>
         <input className={styles.textfield} type="text" id="company" ref={companyRef} />
+      </div>
+      <div className={styles.item}>
+        <label className={styles.label} htmlFor="mobilephone">
+          携帯電話番号
+        </label>
+        <input className={styles.textfield} type="text" id="mobilephone" ref={mobilephoneRef} />
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="email">

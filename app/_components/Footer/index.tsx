@@ -20,7 +20,7 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <p>© SIMPLE. All Rights Reserved 2023</p>
+      <p>&copy; KIRAKIRALIA Inc. All rights reserved.</p>
     </footer>
   );
 }

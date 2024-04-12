@@ -7,7 +7,7 @@ function validateEmail(email: string) {
 
 export async function POST(request: NextRequest) {
   const json = await request.json();
-  const { lastname, firstname, company, email, message } = json;
+  const { lastname, firstname, company, mobilephone, email, message } = json;
   if (!lastname) {
     return NextResponse.json(
       {
@@ -35,6 +35,17 @@ export async function POST(request: NextRequest) {
       {
         status: 'error',
         message: '会社名を入力してください',
+      },
+      {
+        status: 400,
+      },
+    );
+  }
+  if (!mobilephone) {
+    return NextResponse.json(
+      {
+        status: 'error',
+        message: '携帯電話番号を入力してください',
       },
       {
         status: 400,
@@ -101,6 +112,11 @@ export async function POST(request: NextRequest) {
             objectTypeId: '0-1',
             name: 'company',
             value: company,
+          },
+          {
+            objectTypeId: '0-1',
+            name: 'mobilephone',
+            value: mobilephone,
           },
           {
             objectTypeId: '0-1',
