@@ -11,8 +11,8 @@ export default function Header() {
           src="/logo.svg"
           alt="SIMPLE"
           className={styles.logo}
-          width={348}
-          height={133}
+          width={800}
+          height={200}
           priority
         />
       </Link>
